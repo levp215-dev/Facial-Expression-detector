@@ -1,0 +1,7 @@
+[project]
+name = "facial-expression-detector"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "mediapipe==0.10.21",
+]
