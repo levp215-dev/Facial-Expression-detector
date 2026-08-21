@@ -1,6 +1,7 @@
 import cv2
 import time
 import threading
+from pathlib import Path
 import mediapipe as mp
 from mediapipe.tasks.python.vision import (
     FaceDetector,
@@ -8,7 +9,6 @@ from mediapipe.tasks.python.vision import (
     RunningMode,
 )
 from mediapipe import Image, ImageFormat
-import requests
 
 BaseOptions = mp.tasks.BaseOptions
 
@@ -20,7 +20,7 @@ def result_callback(result, output_image, timestamp_ms: int):
     with results_lock:
         results_by_ts[timestamp_ms] = result
 
-MODEL_FILENAME = "face_detection_short_range.tflite"
+MODEL_FILENAME = Path(__file__).with_name("blaze_face_short_range.tflite")
 
 options = FaceDetectorOptions(
     base_options=BaseOptions(model_asset_path=MODEL_FILENAME),
