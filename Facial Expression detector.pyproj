@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>9179cbfb-26ed-47f6-bbc3-47baf2e8c5c5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Facial_Expression_detector.py</StartupFile>
+    <StartupFile>Facial Expression detector.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Facial Expression detector</Name>
     <RootNamespace>Facial Expression detector</RootNamespace>
+    <IsWindowsApplication>True</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
